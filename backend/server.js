@@ -12,7 +12,6 @@ app.use(express.static("public"));
 app.use(express.static(path.join(__dirname, 'backend')))
 const script = express();
 script.use(express.static(path.join('../views', 'show')));
-
 mongoose.connect(url);
 MongoClient.connect(url, function (err, db) {
   if (err) throw err;
