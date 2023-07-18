@@ -38,7 +38,6 @@ MongoClient.connect(url, function (err, db) {
     })
   });
 });
-
 app.listen(4000, function () {
   console.log('server is runing on port');
 });
