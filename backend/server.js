@@ -6,7 +6,6 @@ const { ObjectID } = require('bson');
 var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb+srv://NARIT:cNarit73@cluster0.p42in.mongodb.net/star";
 const app = express();
-
 app.set('view engine', 'ejs')
 app.use(express.static("public"));
 app.use(express.static(path.join(__dirname, 'backend')))
